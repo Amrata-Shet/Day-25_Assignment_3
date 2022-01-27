@@ -2,7 +2,7 @@
 function country_graph(){
     let code=document.querySelector(".country_code").value;
     let url=`https://corona.dnsforfamily.com/graph.png?c=${code}`;
-    var anchors = document.querySelectorAll('a[href=""]');	
+    var anchors = document.querySelectorAll('a[href*=""]');	
 Array.prototype.forEach.call(anchors, function (element) {	   
  element.href = url;
                 });
